@@ -1,2 +1,136 @@
-P {color:rgba(230, 0, 0, 1.00);
-font-size: 20px}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #626262
+}
+
+button {
+    display: inline-block;
+    margin-top:55px;
+    margin-bottom:72px;
+    
+    
+}
+
+/*.section a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.button {
+    display: inline-block;
+	height: 50px;
+    line-height: 50px;
+    position: relative;
+    border: 1px solid white;
+    padding: 0 1rem;
+}
+
+body {
+  background: #ccc;
+}*/
+
+.article__subject {
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: "Playfair Display", "Arial", sans-serif;
+    margin-bottom: 35px;
+}
+
+.article__content {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Playfair Display", "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #626262
+}
+
+
+
+article {
+    display: inline-block;
+    width: 420px;
+    margin-right: 56px;
+}
+
+article:nth-child(odd) {
+    margin-right: 0;
+}
+
+.article__img {
+    display: block;
+    width: 421px;
+    height: 280px;
+    margin-bottom: 32px;
+}
+
+.article__block {
+    margin-bottom: 132px;
+}
+.article__block:nth-child(n-2) {
+    margin-bottom: 0px;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.navigation__items {
+    list-style: none;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.navigation__item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 100px;
+}
+
+.navigation__item a:hover {
+    color: #03a9f4;
+}
+
+
+.navigation__item:last-child {
+    margin-right: 0px;
+}
+
+.article__tag {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    margin-bottom: 30px;
+    color: #b4ad9e;
+}
+
+.visually__hidden:not(:focus):not(:active),
+input[type="checkbox"].visually__hidden,
+input[type="radio"].visually__hidden {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

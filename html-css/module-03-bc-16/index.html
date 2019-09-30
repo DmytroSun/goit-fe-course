@@ -5,125 +5,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dmytro Faifura - Homework 3</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300,400&display=swap" rel="stylesheet">
+    <title>Lifestyle D.F. - Homework 3 bc16</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="page__header container">
-        <h1>
-            <a class="visually__hidden" href="#">Livestyle Webpage</a>
-        </h1>
 
-        <nav>
-            <ul class="navigation__items">
-                <li class="navigation__item">
-                    <a href="#">lifestyle</a>
+    <header class="container">
+        <h1 class="visually__hidden">Lifestyle site</h1>
+        <nav class="site_navigation_area">
+            <ul class="site__navigation__list">
+                <li>
+                    <a href="">Lifestyle</a>
                 </li>
-
-                <li class="navigation__item">
-                    <a href="#">photodiary</a>
+                <li>
+                    <a href="">Photodiary</a>
                 </li>
-
-                <li class="navigation__item">
-                    <a href="#">music</a>
+                <li>
+                    <a href="">Music</a>
                 </li>
-
-                <li class="navigation__item">
-                    <a href="#">travel</a>
+                <li>
+                    <a href="">Travel</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-        <section>
-            <div class="container">
+        <section class="articles__section">
+            <h2 class="visually__hidden">Articles section</h2>
 
-                <h2 class="page__articles visually__hidden">Page Articles</h2>
+            <ul class="articles__list">
 
-                <article class="article__block">
-                    <img class="article__img" src="./img/row-1-left-post.png" alt="Image with a girl">
-                    <span class="article__tag">Lifestyle</span>
-                    <h3 class="article__subject">More than just a music festival</h3>
-                    <h4>
-                        <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris</p>
-                    </h4>
-                </article>
-
-                <article class="article__block">
-                    <img class="article__img" src="./img/row-1-right-post.png" alt="Image with a cup">
-                    <span class="article__tag">Lifestyle</span>
-                    <h3 class="article__subject">Life tastes better with coffee</h3>
-                    <h4>
-                        <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris</p>
-                    </h4>
-                </article>
-
-                <article class="article__block">
-                    <img class="article__img" src="./img/row-2-left-post.png" alt="Image with a bridge">
-                    <span class="article__tag">Photodiary</span>
-                    <h3 class="article__subject">American dream</h3>
-                    <h4>
-                        <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris</p>
-                    </h4>
-                </article>
-
-                <article class="article__block">
-                    <img class="article__img" src="./img/row-2-right-post.png" alt="Image with a man">
-                    <span class="article__tag">Photodiary</span>
-                    <h3 class="article__subject">A day exploring the Alps</h3>
-                    <h4>
-                        <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris</p>
-                    </h4>
-                </article>
-
-                <article class="article__block">
-                    <img class="article__img" src="./img/row-3-left-post.png" alt="Image with a girl on a road">
-                    <span class="article__tag">Lifestyle</span>
-                    <h3 class="article__subject">Top 10 song for running</h3>
-                    <h4>
-                        <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris</p>
-                    </h4>
-                </article>
-
-                <article class="article__block">
-                    <img class="article__img" src="./img/row-3-right-post.png" alt="Image with a road">
-                    <span class="article__tag">Lifestyle</span>
-                    <h3 class="article__subject">Cold winter days</h3>
-                    <h4>
-                        <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris</p>
-                    </h4>
-                </article>
+                <li class="article">
+                    <img src="./img/01-girl.jpg" alt="Dancing girl" class="article__image" width="420px" height="280px">
+                    <p class="article__tag">lifestyle</p>
+                    <h3 class="article__name">More than just a music festival</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris </p>
+                </li>
 
 
-            </div>
+                <li class="article">
+                    <img src="./img/02-cup.jpg" alt="Cup of coffee" class="article__image" width="420px" height="280px">
+                    <p class="article__tag">lifestyle</p>
+                    <h3 class="article__name">Life tastes better with coffee</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris </p>
+                </li>
+
+                <li class="article">
+                    <img src="./img/03-bridge.jpg" alt="Girls in front of a bridge" class="article__image" width="420px"
+                        height="280px">
+                    <p class="article__tag">photodiary</p>
+                    <h3 class="article__name">American dream</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris </p>
+                </li>
+
+                <li class="article">
+                    <img src="./img/04-guy.jpg" alt="A man in foggy area" class="article__image" width="420px"
+                        height="280px">
+                    <p class="article__tag">photodiary</p>
+                    <h3 class="article__name">A day exploring the Alps</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris </p>
+                </li>
+
+                <li class="article">
+                    <img src="./img/05-woman.jpg" alt="A girl on a road" class="article__image" width="420px"
+                        height="280px">
+                    <p class="article__tag">lifestyle</p>
+                    <h3 class="article__name">Top 10 song for running</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris </p>
+                </li>
+
+                <li class="article">
+                    <img src="./img/06-road.jpg" alt="Mountain road on a winter time" class="article__image"
+                        width="420px" height="280px">
+                    <p class="article__tag">lifestyle</p>
+                    <h3 class="article__name">Cold winter days</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris </p>
+                </li>
+
+            </ul>
+
         </section>
 
-        <div class="wrapper">
-            <button class="button">Load more</button>
+        <div class="button__section">
+            <button class="load__more__btn">Load more</button>
         </div>
-
 
     </main>
 

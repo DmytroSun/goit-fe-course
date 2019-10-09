@@ -130,6 +130,10 @@ a {
     margin-bottom: 30px;
 }
 
+.product_image img {
+    display: block;
+}
+
 .product_info {
     font-size: 18px;
     font-weight: 900;

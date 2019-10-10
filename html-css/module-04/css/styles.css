@@ -1,6 +1,6 @@
-* {
-    /* outline: 1px solid red; */
-}
+/* * {
+    outline: 1px solid red;
+} */
 
 html {
     box-sizing: border-box;
@@ -36,10 +36,12 @@ a {
 /* Header */
 
 .page_header {
-    padding: 38px 0;
+    padding-top: 38px;
+    padding-bottom: 100px;
 }
 
 .nav_list_item_link {
+    display: block;
     line-height: 34px;
     font-size: 14px;
     font-family: "Open-Sans", sans-serif;
@@ -82,7 +84,6 @@ a {
 
 .nav_list_item {
     float: left;
-    display: inline-block;
     font-style: 14px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -96,10 +97,10 @@ a {
 
 /* Featured products */
 
+/* 
 .fp_section {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     /* 106-38-((LH-FS)/2) */
-}
 
 .fp_title,
 .ln_title {
@@ -108,6 +109,7 @@ a {
     color: #515151;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 118px;
 }
 
 .fp_title::after,
@@ -117,7 +119,8 @@ a {
     width: 164px;
     height: 7px;
     background-color: #1abc9c;
-    margin: 27px auto 92px;
+    margin: 27px auto 0;
+    /* margin-top: 27px; */
 }
 
 /* Product Card */

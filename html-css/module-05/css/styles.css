@@ -98,7 +98,7 @@ a {
 .slider {
     position: relative;
     background-image: url("../img/Background.jpg");
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -194,7 +194,6 @@ section.slider:before {
 .collection_sec {
     background-color: #e9f0fd;
     padding: 95px 0 70px;
-    padding-bottom: 70px;
 }
 
 .nc_title {
@@ -218,17 +217,19 @@ section.slider:before {
 /* Product Card */
 
 .product_card {
-    position: relative;
     float: left;
     width: 255px;
-    height: 322px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
+.product_image {
+    position: relative;
+}
+
 .product_card_overlay {
-    width: 235px;
-    height: 262px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
     position: absolute;
     top: 10px;
     left: 10px;
@@ -236,13 +237,13 @@ section.slider:before {
     opacity: 0;
 }
 
-.product_image:hover .product_info,
-.product_image:focus .product_info {
+.product_card:hover .product_info,
+.product_card:focus .product_info {
     background-color: rgb(26, 188, 156);
 }
 
-.product_image:hover .product_card_overlay,
-.product_image:focus .product_card_overlay {
+.product_card:hover .product_card_overlay,
+.product_card:focus .product_card_overlay {
     opacity: 1;
 }
 

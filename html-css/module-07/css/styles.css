@@ -1,6 +1,6 @@
-* {
-    /* outline: 1px solid red; */
-}
+/* * {
+    outline: 1px solid red;
+} */
 
 /* montserrat-regular - cyrillic_latin */
 @font-face {
@@ -130,8 +130,7 @@ a {
     color: #000000;
 }
 
-.section_description,
-.reqired_text {
+.section_description {
     font-family: "PT SerifR", sans-serif;
     font-style: italic;
     font-size: 16px;
@@ -182,7 +181,7 @@ a {
 }
 
 .services_description {
-    font-family: "PT SlabR", sans-serif;
+    font-family: "Roboto SlabR", sans-serif;
     font-size: 14px;
     line-height: 1.2;
     padding-bottom: 120px;
@@ -193,10 +192,10 @@ a {
 /* Contacts Section */
 
 .contacts_section {
-    background-image: url(../img/map_bg_1400_676.png);
-    background-position: top center;
+    background-color: #000000;
+    background-image: url(../img/map_bg_614_537.png);
+    background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: cover;
     height: 676px;
 }
 
@@ -213,7 +212,6 @@ a {
     padding-bottom: 76px;
 }
 
-
 .spacer_contacts {
     display: flex;
 }
@@ -227,7 +225,8 @@ input {
     justify-content: space-between;
 }
 
-.contact_form_inputs, .contact_form_textarea {
+.contact_form_inputs,
+.contact_form_textarea {
     font-family: 'MontserratB', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -235,6 +234,11 @@ input {
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
+}
+
+.contact_form_inputs,
+.contact_form_textarea {
+    text-transform: none;
 }
 
 .spacer_contacts {
@@ -277,13 +281,13 @@ input {
     cursor: pointer;
 }
 
-form input[type="text"]:valid,
-form input[type="email"]:valid {
-     outline: 2px solid green;
+form input[type="text"]:valid:focus,
+form input[type="email"]:valid:focus {
+    outline: 2px solid green;
 }
 
-form input[type="text"]:invalid,
-form input[type="email"]:invalid {
+form input[type="text"]:invalid:focus,
+form input[type="email"]:invalid:focus {
     outline: 2px solid red;
 }
 

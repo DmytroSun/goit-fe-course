@@ -1,0 +1,304 @@
+* {
+    /* outline: 1px solid red; */
+}
+
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-family: 'MontserratR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+    font-family: 'MontserratB';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-italic - cyrillic_latin */
+@font-face {
+    font-family: 'PT SerifR';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Italic'), local('PTSerif-Italic'),
+        url('../fonts/pt-serif-v11-cyrillic_latin-italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/pt-serif-v11-cyrillic_latin-italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Roboto SlabR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+        url('../fonts/roboto-slab-v9-cyrillic_latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-slab-v9-cyrillic_latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header_div {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 0 44px;
+    align-items: center;
+}
+
+.site_title img {
+    display: block;
+}
+
+.navigation_list {
+    display: flex;
+}
+
+.nav_list_item:not(:last-of-type) {
+    margin-right: 42px;
+}
+
+.navigation_list_item_link {
+    font-family: "MontserratR", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+}
+
+.navigation_list_item_link:hover {
+    color: #fed136;
+}
+
+
+/* Services section */
+
+.services_section {
+    padding-top: 76px;
+    text-align: center;
+}
+
+.section_title {
+    font-family: "MontserratB", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-bottom: 18px;
+    font-weight: 700;
+}
+
+.section_title_services {
+    color: #000000;
+}
+
+.section_description,
+.reqired_text {
+    font-family: "PT SerifR", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 80px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.services_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services_item::before {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid #fed136;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services_item:not(:last-of-type) {
+    margin-right: 50px;
+}
+
+.services_item_ecommerce::before {
+    background-image: url(../img/ico/e-commecre_40_39.png);
+}
+
+.services_item_responsiveweb::before {
+    background-image: url(../img/ico/responsive_web.png);
+}
+
+.services_item_websecurity::before {
+    background-image: url(../img/ico/web_security_29_38.png);
+}
+
+.services_name {
+    font-family: "MontserratB", sans-serif;
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.services_description {
+    font-family: "PT SlabR", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    padding-bottom: 120px;
+    font-weight: 400;
+    color: #777777;
+}
+
+/* Contacts Section */
+
+.contacts_section {
+    background-image: url(../img/map_bg_1400_676.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 676px;
+}
+
+.contacts_section {
+    text-align: center;
+}
+
+.section_title_contacts {
+    padding: 108px 0 20px;
+    color: #fff;
+}
+
+.section_description_contacts {
+    padding-bottom: 76px;
+}
+
+
+.spacer_contacts {
+    display: flex;
+}
+
+input {
+    display: block;
+}
+
+.contacts_form {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact_form_inputs, .contact_form_textarea {
+    font-family: 'MontserratB', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.spacer_contacts {
+    display: flex;
+}
+
+.contact_form_input {
+    padding-left: 20px;
+    width: 460px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.contact_form_input {
+    margin-bottom: 30px;
+}
+
+.contact_form_textarea {
+    resize: none;
+    width: 460px;
+    height: 210px;
+    padding: 20px;
+}
+
+.contact_btn {
+    margin: 0 auto 35px;
+    padding: 0;
+    font-family: 'MontserratB', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 3px;
+    display: block;
+    width: 240px;
+    height: 70px;
+    border: none;
+    background-color: #fed136;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form input[type="text"]:valid,
+form input[type="email"]:valid {
+     outline: 2px solid green;
+}
+
+form input[type="text"]:invalid,
+form input[type="email"]:invalid {
+    outline: 2px solid red;
+}
+
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

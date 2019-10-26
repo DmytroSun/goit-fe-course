@@ -1,0 +1,106 @@
+/* Amazing Services section */
+
+.services-div {
+  padding-top: 50px;
+}
+
+.italic-text {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  line-height: 2;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 42px auto 0;
+  }
+}
+
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    flex: 0 0 390px;
+    margin-bottom: 100px;
+  }
+
+  &__item-name {
+    font-family: "Montserrat-400", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 14px;
+  }
+
+  &__item-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+  }
+
+  &__image-box {
+    min-width: 90px;
+  }
+
+  &__image-box-photography::after,
+  &__image-box-webdesign::after,
+  &__image-box-creativity::after,
+  &__image-box-seo::after,
+  &__image-box-css::after,
+  &__image-box-digital::after {
+    margin: 0 auto;
+    display: block;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__image-box-photography::after {
+    background-image: url(../images/clock_32_31.svg);
+  }
+
+  &__image-box-webdesign::after {
+    background-image: url(../images/graph_32_32.svg);
+  }
+
+  &__image-box-creativity::after {
+    background-image: url(../images/computer_32_28.svg);
+  }
+
+  &__image-box-seo::after {
+    background-image: url(../images/book_32_32.svg);
+  }
+
+  &__image-box-css::after {
+    background-image: url(../images/house_32_31.svg);
+  }
+
+  &__image-box-digital::after {
+    background-image: url(../images/square_32_32.svg);
+  }
+}

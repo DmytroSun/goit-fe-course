@@ -1,0 +1,124 @@
+/* Meet Our Team Section */
+
+.team-sec {
+  &__description {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 94px;
+    text-align: center;
+  }
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    text-align: center;
+    flex: 0 0 380px;
+  }
+
+  &__item-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px #95e1d3;
+    opacity: 0;
+  }
+
+  &__item-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 14px;
+  }
+
+  &__item-role {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #999999;
+    margin-bottom: 80px;
+  }
+}
+
+.team-list-image-div {
+  position: relative;
+  margin-bottom: 30px;
+  transition: all 0.2s linear;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+  }
+
+  & img:hover {
+    transform: translate (-10px, -10px);
+    transition: transform 0.2s linear;
+  }
+
+  &__photo {
+    display: block;
+  }
+
+  &:hover .team-list__item-overlay {
+    opacity: 1;
+    transition: all 0.2s linear .3s;
+    background-image: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  }
+}
+
+.overlay__fb,
+.overlay__tw,
+.overlay__pin,
+.overlay__inst {
+  width: 55px;
+  height: 56px;
+  background-color: #fce38a;
+  display: block;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    width: 26px;
+    height: 26px;
+    fill: #f38181;
+  }
+
+  .fb {
+    padding-left: 8px;
+  }
+
+  .pin {
+    padding-left: 4px;
+  }
+}
+
+.overlay__fb:hover,
+.overlay__tw:hover,
+.overlay__pin:hover,
+.overlay__inst:hover {
+  background-color: #f38181;
+  transition: all 0.2s linear;
+
+  & svg {
+    fill: #ffffff;
+    transition: all 0.2s linear;
+  }
+}

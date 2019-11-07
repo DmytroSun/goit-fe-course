@@ -11,7 +11,7 @@ console.log("Task 1");
 // logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
-const logItems = function(arrayName) {
+const logItems = function (arrayName) {
   for (let i = 0; i < arrayName.length; i++) {
     console.log(`${i + 1} = ${arrayName[i]}`);
   }
@@ -44,7 +44,7 @@ console.log("Task 2");
 // console.log(calculateEngravingPrice('Donec orci lectus aliquam est', 40)); // 200
 // console.log(calculateEngravingPrice('Donec orci lectus aliquam est', 20)); // 100
 
-const calculateEngravingPrice = function(words, pricePerWord) {
+const calculateEngravingPrice = function (words, pricePerWord) {
   let totalPrice = 0;
   const subArray = words.split(" ");
   totalPrice = subArray.length * pricePerWord;
@@ -81,7 +81,7 @@ console.log("Task 3");
 // console.log(findLongestWord('Google do a roll')); // 'Google'
 // console.log(findLongestWord('May the force be with you')); // 'force'
 
-const findLongestWord = function(string) {
+const findLongestWord = function (string) {
   const subArray = string.split(" ");
   let wordLength = 0;
   let longestWord;
@@ -123,7 +123,7 @@ console.log("Task 4");
 // );
 // // вернется форматированная строка
 
-const formatString = function(someString) {
+const formatString = function (someString) {
   let functionVar;
   if (someString.length < 40) {
     functionVar = someString;
@@ -177,7 +177,7 @@ console.log("Task 5");
 // console.log(checkForSpam('Get best sale offers now!')); // true
 // console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 
-const checkForSpam = function(str) {
+const checkForSpam = function (str) {
   if (
     str.toLowerCase().includes("spam") ||
     str.toLowerCase().includes("sale")
@@ -207,6 +207,8 @@ console.log("Task 6");
 // let input;
 // const numbers = [];
 // let total = 0;
+// ---------------------------------------------------
+// WORK CASE 1
 
 let input;
 const numbers = [];
@@ -228,6 +230,32 @@ do {
 console.log(`Total amount is ${total}`);
 alert(`Total amount is ${total}`);
 
+// ---------------------------------------------------
+// WORK CASE 2
+
+// let input;
+// const numbers = [];
+// let total = 0;
+// do {
+//   input = prompt("Please enter a number (Task 6)");
+
+//   if (isNaN(input)) {
+//     alert("You can enter just a number (Task 6)");
+//   } else {
+
+//     let inputNum = Number(input);
+//     numbers.push(inputNum);
+//     console.log(`Number ${input} was added to your array.`);
+//     console.log(`Your current array is "${numbers}"`);
+//   }
+// } while (input !== null);
+
+// for (let itemNumbers of numbers) {
+//   total = total + itemNumbers;
+// }
+// console.log(`Total amount is ${total}`);
+// alert(`Total amount is ${total}`);
+// ---------------------------------------------------
 console.log(
   "-----------------------------------------------------------------"
 );
@@ -279,6 +307,6 @@ console.log(
 // addLogin(logins, 'Zod'); // 'Ошибка! Логин должен быть от 4 до 16 символов'
 // addLogin(logins, 'jqueryisextremelyfast'); // 'Ошибка! Логин должен быть от 4 до 16 символов'
 
-console.log(
-  "-----------------------------------------------------------------"
-);
+// console.log(
+//   "-----------------------------------------------------------------"
+// );

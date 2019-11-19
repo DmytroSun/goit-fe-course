@@ -45,25 +45,24 @@ console.log("Task 2");
 const inventory = {
   items: ["Монорельса", "Фильтр"],
 
-  add(itemName) {
-    console.log(`Adding ${itemName} to inventory`);
-    this.items.push(itemName);
-  },
-
   remove(itemName) {
     console.log(`Removing ${itemName} from inventory`);
     this.items = this.items.filter(item => item !== itemName);
   }
 };
 
-const invokeInventoryAction = function (itemName, action) {
+function add(itemName) {
+  console.log(`Adding ${itemName} to inventory`);
+  this.items.push(itemName);
+}
+
+const invokeInventoryAction = function(itemName, action) {
   console.log(`Invoking action on ${itemName}`);
   action(itemName);
   // action(itemName, this(action));inventory
-
 };
 
-invokeInventoryAction("Аптечка", inventory.add.bind(inventory));
+invokeInventoryAction("Аптечка", add.bind(inventory));
 // Invoking action on Аптечка
 // Adding Аптечка to inventory
 

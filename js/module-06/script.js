@@ -1,5 +1,5 @@
-// "use strict";
-import users from "./users.js";
+"use strict";
+import users from "./users";
 console.log(
   "-----------------------------------------------------------------"
 );
